@@ -1,0 +1,8 @@
+* 
+{
+    box-sizing: border-box; /* pour permettre de tout trouver sans perdre en marge*/
+}
+a
+{
+    text-decoration: none;
+}

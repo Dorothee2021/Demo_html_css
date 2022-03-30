@@ -1,0 +1,166 @@
+
+@font-face {
+    font-family: "Smokum";
+    src: url("../Fonts/Smokum/Smokum-Regular.ttf");
+}
+/* sélecteurs de tag classique */ 
+html
+{
+    /*font-family: 'Indie Flower', sans-serif;*/
+    color:aliceblue
+    
+}
+body
+{
+    background-color: #011627;
+    max-width: 100%;
+    height:auto ;
+
+    text-align: justify;
+    /*border: 1px solid blueviolet; /** pour la bordure */
+    overflow: scroll; /* pour scroller s'il y a trop d'info*/
+}
+
+header
+{
+    /*opacity: 0.25; */ 
+    height: 150px;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid purple;
+    
+}
+header > img
+{
+    max-height: 50%;
+    /*text-align: center;*/
+}
+nav
+{
+    margin-top: 15px;
+}
+nav ul
+{
+    clear: both;
+    margin-top: 15px;
+}
+
+nav li
+{
+    border: 1px solid rgb(240, 234, 234); /*pourquoi j'ai pas des petit tableau? */
+    width: 25%;
+    float: left;
+}
+nav a /* ici on vise à sélectionner les ul et ils sont dans nav*/
+{
+    color: aliceblue;
+
+}
+
+nav ul li a /* tant qu'on dépasse pas 4 niveau, ca va d'écrire "nav ul li a"  OU "nav a" */
+{
+    text-decoration: none; /* si par exemple on veut pas qu'il y ait de la déco au niveau de a--> d'où la création de general a*/
+    
+}
+
+/*nav ul li{
+   
+    list-style-type: none;
+}*/
+li {
+   
+    list-style-type: none;
+}
+
+h1
+{
+    font-size: 2rem; /* font-size: 200%; ceci veut dire de calculer les 200% de 500px = what? --> 2em veut aussi dire 200%*/
+    font-weight: lighter;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: "Indie Flower"; /* à chaque fois qu'on ajoute le font on doit l'appeler ici*/
+}
+/* fin de sélecteurs*/
+/* sélecteurs avancés */
+
+section h2
+{
+    font-family: "Smokum";
+    color: rgb(204, 158, 8);
+}
+section 
+{
+   
+}
+
+section h3.subTitlesArticles3 /* Avant de mettre ceci, on met un class="subTitlesArticles3 là où on veut select."*/
+{
+    text-align: center;
+}
+section > article /* va sélectionner les enfants de tel section, soit les deux articles */
+{
+    /*height : 200px;*/ /* peut causer un overflow*/ 
+    border: 2px solid rgb(180, 206, 212); /* pourquoi ça change rien?*/
+    /*overflow: hidden; */ /* --> scroll pour scroller s'il y a trop d'info hidden pour ?*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/ /*voir notes*/
+    
+}
+section dl.definitionSection1
+{
+    text-align:left;
+    border: 1px solid rgb(140, 37, 153); 
+}
+
+section dl.definitionSection2
+{
+    text-align:right;
+    border: 1px solid rgb(140, 37, 153); 
+}
+dl dt 
+{
+    color: rgb(204, 158, 8);
+    font-family: "Indie Flower";
+    font-weight: bold;
+    text-align: center;
+    
+}
+li em 
+{
+    color: rgb(167, 121, 211);
+}
+dl
+{
+   
+}
+article dl 
+{
+    list-style: none;
+    text-align:justify
+
+   
+}
+
+article p 
+{
+    text-transform:capitalize;
+}
+
+article dt 
+{
+    text-transform:capitalize;
+}
+aside
+{
+    font-style:oblique; /* ou italic */
+
+}
+
+footer#footerontheway /* vérifier ce qu'il a fait*/
+{
+background-color: rgb(132, 178, 196);
+font-family: "Smokum";
+
+}
+/*Alors comment lier les deux alors : recherche balises ?*/
